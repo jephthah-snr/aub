@@ -27,7 +27,7 @@ SECRET_KEY = '2@*_$p+axmlw_@!)i!)y65qkfp0e!9&p6w1&t)gw3q4(3)w^_1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://aubcotonou.org']
+ALLOWED_HOSTS = ['https://aubcotonou.org','web-production-7979.up.railway.app']
 CSRF_TRUSTED_ORIGINS = ['https://aubcotonou.org','http://127.0.0.1','web-production-7979.up.railway.app']
 
 
