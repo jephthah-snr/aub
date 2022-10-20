@@ -28,7 +28,7 @@ SECRET_KEY = '2@*_$p+axmlw_@!)i!)y65qkfp0e!9&p6w1&t)gw3q4(3)w^_1'
 DEBUG = True
 
 ALLOWED_HOSTS = ['https://aubcotonou.org']
-CSRF_TRUSTED_ORIGINS = ['https://aubcotonou.org','http://127.0.0.1','https://web-production-7979.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://aubcotonou.org','http://127.0.0.1','web-production-7979.up.railway.app']
 
 
 # Application definition
