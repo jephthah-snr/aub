@@ -1,0 +1,78 @@
+{% extends 'core/base.html' %}
+{% block content %}
+{% load static %}
+<!-- <link rel="stylesheet" href="{% static 'core/assets/css/style.css' %}"> -->
+    <section class="p-b-150" style="margin-top: 20vh;">
+        <div class="timetable container" id="printContents">
+            <div class="title-section">
+                <h3>Computer Science Timetable</h3>
+                <div class="tags">
+                    <span class="btn btn-warning btn-sm">200 Level</span>
+                    <span class="btn btn-primary btn-sm">1st Semester</span>
+                    <span class="btn btn-default btn-sm print download-btn"><i class="icon-cloud-download"></i> Download</span>
+                </div>
+            </div>
+            <!-- Timetable Starts here -->
+            <div class="main-timetable">
+                <!-- In case you'd need to add more lecture times, you can wrap the table tag in a .table-responsive class or just uncomment the one below -->
+                <!--<div class="table-responsive">-->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Days / Time</th>
+                            {% for item in items %}
+                            <th class="text-center"><i class="icon-bell"></i>{{item.time}}</th>
+                           {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Day 1 -->
+                        <tr>
+                            {% for item in items %}
+                            <td>{{item.day}}</td>
+                            <td>
+                                <div class="single-course">
+                                    <div class="description">
+                                        <h5 class="text-primary">{{item.course.title}}</h5>
+                                        <h5 class="text-warning">| <small>CSC 419</small></h5>
+                                        <span><i class="icon-user"></i> Engr. Praise</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="free">
+                                <div class="free-period">
+                                    <span>Null</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="single-course">
+                                    <div class="description">
+                                        <h5 class="text-primary">Python</h5>
+                                        <h5 class="text-warning">| <small>CSC 419</small></h5>
+                                        <span><i class="icon-user"></i> Engr. Praise</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="single-course">
+                                    <div class="description">
+                                        <h5 class="text-primary">C++</h5>
+                                        <h5 class="text-warning">| <small>CSC 123</small></h5>
+                                        <span><i class="icon-user"></i> Engr. Praise</span>
+                                    </div>
+                                </div>
+                            </td>
+                            {% endfor %}
+                        </tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--</div>-->
+            </div>
+        </div>
+    </section>
+{% endblock %}
+    <script src="{% static 'core/assets/js/jquery.3.2.1.min.js' %}"></script>
+    <script src="{% static 'core/assets/js/html2pdf.bundle.min.js' %}"></script>
+    <script src="{% static 'core/assets/js/sweetalert.min.js' %}"></script>
+    <script src="{% static 'core/assets/js/print.js' %}"></script>

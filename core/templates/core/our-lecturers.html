@@ -1,0 +1,217 @@
+
+{% extends 'core/base.html' %}
+{% block content %}
+    {% load static %}
+    {% block title %}
+    meet the Lecturers | African University of Benin
+    {% endblock title%}
+    <!--Begin content wrapper-->
+    <div class="content-wrapper">
+
+        <div class="galery-wrapper">
+            <div class="container">
+                <div class="galery-title text-center">
+                    <h4 class="heading-regular">AUB GALLERY</h4>
+                </div>
+                <div class="galery-content">
+                    <ul>
+                        <li class="col-sm-3 col-xs-6">
+                            <div class="galery-item">
+                                 <img src="{% static 'core/aub_files/peru.jpg' %}" alt="">
+                                <div class="galery-content">
+                                    <h4>Rev Dr. Emmanuel Akujuobi</h4>
+                                    <a href="galery.html#" class="popup-click"><span class="lnr lnr-magnifier"></span></a>
+                                </div>
+                                <div class="box-content-item" style="display: none">
+                                    <div class="box-img">
+                                     <img src="{% static 'core/aub_files/peru.jpg' %}" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p>Mass communication is the process of imparting and exchanging information through mass media to large segments of the population. It is usually understood for relating to various forms of media, as its technologies are used for the dissemination of information.</p>
+                                        <small>Rev Dr. Emmanuel Akujuobi</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3 col-xs-6">
+                            <div class="galery-item">
+                                 <img src="{% static 'core/aub_files/prof-ogar.jpg' %}" alt="">
+                                <div class="galery-content">
+                                    <h4>Prof Ogar u Victor</h4>
+                                    <a href="galery.html#" class="popup-click"><span class="lnr lnr-magnifier"></span></a>
+                                </div>
+                                <div class="box-content-item" style="display: none">
+                                    <div class="box-img"> <img src="{% static 'core/aub_files/prof-ogar.jpg' %}" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p>Mass communication is the process of imparting and exchanging information through mass media to large segments of the population. It is usually understood for relating to various forms of media, as its technologies are used for the dissemination of information.</p>
+                                        <small>Rev Dr. Emmanuel Akujuobi</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3 col-xs-6">
+                            <div class="galery-item">
+                                 <img src="{% static 'core/aub_files/engnr-praise.jpg' %}" alt="">
+                                <div class="galery-content">
+                                    <h4>Engr Akujuobi Praise</h4>
+                                    <a href="galery.html#" class="popup-click"><span class="lnr lnr-magnifier"></span></a>
+                                </div>
+                                <div class="box-content-item" style="display: none">
+                                    <div class="box-img"> <img src="{% static 'core/aub_files/engnr-praise.jpg' %}" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p>Mass communication is the process of imparting and exchanging information through mass media to large segments of the population. It is usually understood for relating to various forms of media, as its technologies are used for the dissemination of information.</p>
+                                        <small>Rev Dr. Emmanuel Akujuobi</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li class="col-sm-3 col-xs-6">
+                            <div class="galery-item">
+                                 <img src="{% static 'core/aub_files/peru.jpg' %}" alt="">
+                                <div class="galery-content">
+                                    <h4>Best Friend Ever</h4>
+                                    <a href="galery.html#" class="popup-click"><span class="lnr lnr-magnifier"></span></a>
+                                </div>
+                                <div class="box-content-item" style="display: none">
+                                    <div class="box-img"> <img src="{% static 'core/aub_files/peru.jpg' %}" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p>Mass communication is the process of imparting and exchanging information through mass media to large segments of the population. It is usually understood for relating to various forms of media, as its technologies are used for the dissemination of information.</p>
+                                        <small>Rev Dr. Emmanuel Akujuobi</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3 col-xs-6">
+                            <div class="galery-item">
+                               <i <img src="{% static 'core/aub_files/peru.jpg' %}" alt="">
+                                <div class="galery-content">
+                                    <h4>Mass Communication</h4>
+                                    <a href="galery.html#" class="popup-click"><span class="lnr lnr-magnifier"></span></a>
+                                </div>
+                                <div class="box-content-item" style="display: none">
+                                    <div class="box-img">
+                                       <i <img src="{% static 'core/aub_files/peru.jpg' %}" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p>Mass communication is the process of imparting and exchanging information through mass media to large segments of the population. It is usually understood for relating to various forms of media, as its technologies are used for the dissemination of information.
+                                            <span><h3>Rev Dr Emmanuel Akujuobi</h3></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3 col-xs-6">
+                            <div class="galery-item">
+                                 <img src="{% static 'core/aub_files/peru.jpg' %}" alt="">
+                                <div class="galery-content">
+                                    <h4>Best Friend Ever</h4>
+                                    <a href="galery.html#" class="popup-click"><span class="lnr lnr-magnifier"></span></a>
+                                </div>
+                                <div class="box-content-item" style="display: none">
+                                    <div class="box-img"> <img src="{% static 'core/aub_files/peru.jpg' %}" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p>Mass communication is the process of imparting and exchanging information through mass media to large segments of the population. It is usually understood for relating to various forms of media, as its technologies are used for the dissemination of information.</p>
+                                        <small>Rev Dr. Emmanuel Akujuobi</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3 col-xs-6">
+                            <div class="galery-item">
+                                 <img src="{% static 'core/aub_files/peru.jpg' %}" alt="">
+                                <div class="galery-content">
+                                    <h4>Best Friend Ever</h4>
+                                    <a href="galery.html#" class="popup-click"><span class="lnr lnr-magnifier"></span></a>
+                                </div>
+                                <div class="box-content-item" style="display: none">
+                                    <div class="box-img"> <img src="{% static 'core/aub_files/peru.jpg' %}" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p>Mass communication is the process of imparting and exchanging information through mass media to large segments of the population. It is usually understood for relating to various forms of media, as its technologies are used for the dissemination of information.</p>
+                                        <small>Rev Dr. Emmanuel Akujuobi</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3 col-xs-6">
+                            <div class="galery-item">
+                             <img src="{% static 'core/aub_files/peru.jpg' %}" alt="">
+                                <div class="galery-content">
+                                    <h4>Best Friend Ever</h4>
+                                    <a href="galery.html#" class="popup-click"><span class="lnr lnr-magnifier"></span></a>
+                                </div>
+                                <div class="box-content-item" style="display: none">
+                                    <div class="box-img"> <img src="{% static 'core/aub_files/peru.jpg' %}" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p>Mass communication is the process of imparting and exchanging information through mass media to large segments of the population. It is usually understood for relating to various forms of media, as its technologies are used for the dissemination of information.</p>
+                                        <small>Rev Dr. Emmanuel Akujuobi</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3 col-xs-6">
+                            <div class="galery-item">
+                                 <img src="{% static 'core/aub_files/peru.jpg' %}" alt="">
+                                <div class="galery-content">
+                                    <h4>Best Friend Ever</h4>
+                                    <a href="galery.html#" class="popup-click"><span class="lnr lnr-magnifier"></span></a>
+                                </div>
+                                <div class="box-content-item" style="display: none">
+                                    <div class="box-img"> <img src="{% static 'core/aub_files/peru.jpg' %}" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <p>Mass communication is the process of imparting and exchanging information through mass media to large segments of the population. It is usually understood for relating to various forms of media, as its technologies are used for the dissemination of information.</p>
+                                        <small>Rev Dr. Emmanuel Akujuobi</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                     -->
+                <div class="pagination-wrapper text-center" style="visibility: hidden;">
+                    <ul class="pagination">
+                        <li class="prev"><a href="galery.html#">Previous</a></li>
+                        <li><a href="galery.html#">1</a></li>
+                        <li><a href="galery.html#">2</a></li>
+                        <li class="current"><span>3</span></li>
+                        <li><a href="galery.html#">4</a></li>
+                        <li><a href="galery.html#">5</a></li>
+                        <li class="next"><a href="galery.html#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--begin newsletter-->
+        <div class="newsletter newsletter-parallax">
+            <div class="container">
+                <div class="newsletter-wrapper text-center">
+                    <div class="newsletter-title">
+                        <h2 class="heading-light">Keep Up and Join Our Newsletter</h2>
+                        <p class="text-white">Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+                    </div>
+                    <form name="subscribe-form" target="_blank" class="form-inline">
+                       <input type="text" class="form-control text-center form-text-light" name="EMAIL" value="" placeholder="E-mail Address" >
+                        <button type="submit" class="button bnt-theme">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--end newsletter-->
+
+    </div>
+        <!--End footer wrapper-->
+    
+        <div class="bg-popup"></div>
+        <div class="wrapper-popup">
+            <a href="javascript:void(0)" class="close-popup" style="margin-top: 40px; background-color: rgb(17, 17, 94);"><span class="lnr lnr-cross-circle" style="margin-top: 20px;">X</span></a>
+            <div class="popup-content">
+                 <!--content-popup   -->
+    
+            </div>
+        </div>
+    
+    <!--End content wrapper-->
+    {% endblock content %}

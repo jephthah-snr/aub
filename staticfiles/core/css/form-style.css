@@ -1,0 +1,37 @@
+.floating-form {
+  position: relative;
+}
+.floating-form .form-control {
+  background: transparent;
+  position: relative;
+  z-index: 50;
+}
+.floating-form .form-control:focus, .floating-form .form-control:active, .floating-form .form-control:valid {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.floating-form .form-control:focus + label, .floating-form .form-control:active + label, .floating-form .form-control:valid + label {
+  transform: translateY(-40%);
+  top: -2px;
+  z-index: 100;
+  font-size: 12px;
+}
+.floating-form label {
+  position: absolute;
+  top: 50%;
+  /* bootstrap > input > padding size */
+  left: 0.75rem;
+  z-index: 1;
+  font-size: 14px;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+  background: #fff;
+  color: #afafaf;
+}
+.floating-form textarea + label {
+  top: 1.275rem;
+}
+.floating-form input{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

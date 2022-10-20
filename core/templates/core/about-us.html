@@ -1,0 +1,225 @@
+
+{% extends 'core/base.html' %}
+{% block content %}
+    {% load static %}
+    {% block title %}
+    About Us | African University of Benin
+    {% endblock title%}
+    <!--Begin content wrapper-->
+    <div class="content-wrapper">
+        <!--begin about us-->
+        <div class="about-us">
+            <div class="about-us-title text-center">
+                <div class="container">
+                    <h1 class="heading-bold text-uppercase">About African university of Benin</h1>
+                </div>
+            </div>
+            <div class="about-us-content" id="history">
+                <div class="container">
+                    <div class="content-wrapper">
+                        <a href="{% url 'tuition' %}" style="padding: 15px 50px; background-color: rgb(240, 204, 0); margin-bottom: 100vh;">Tuition Fee</a>
+                        <p class="text-light" style="margin-top: 20px;">
+                            <b>African University of Benin</b>  (AUB) is a bilingual university (French and English) with a unique philosophy of nations building via a thorough understanding of the substance of a university education and poised to bringing out the life and flesh of its substance to reality, its full manifestation through the apprenticeship model approach in her curriculum and instructional pedagogy.
+                        </p>
+                        <p class="text-light">
+
+                            Founded in 2013, the African University of Benin has, for over 19 years, provided qualitative and research-oriented education to Nigerians, Beninese and all those who have entered its domain in search of knowledge. The University has built a legacy of excellence and has been instrumental in the production of top range graduates and academia who have had tremendous impact, directly or indirectly, on growth and development in Nigeria and Benin.<br>
+                            <b>African University of Benin</b> (Aub) started as African business school in 2013,. The focus then was specifically on executive management education and leadership training
+                            <br>Three years after, it was granted full university status and
+                            full accreditation  of courses by the ministry of higher education and scientific research of the republic of Benin. In February 2016, the first set of bejants were admitted into the departments of international relations, banking & finance, industrial computing, human resource management and accounting. In the same year, students of business school continued with the university for their bachelor's degree through to conversion program. Since then , the school school has been growing in leaps and bounds and consequently become the first choice university in the republic of Benin as a result of unparalleled educational quality and international recognition
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end about us-->
+
+        <!--begin programs & services-->
+        <div class="programs-services">
+            <div class="container" id="mission">
+                <div class="row">
+                    <div class="services-img col-md-6 col-sm-12 col-xs-12">
+                        <img class="img-responsive" src="{% static 'core/aub_files/20.jpg' %}" alt="">
+                    </div>
+                    <div class="services-content col-md-6 col-sm-12 col-xs-12">
+                        <h2 class="heading-regular">Programs &amp; Services</h2>
+                        <div id="tab_services">
+                            <!--Nav tabs-->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a class="text-light" href="about-us.html#social" aria-controls="social" role="tab" data-toggle="tab">Vision</a>
+                                </li>
+                                <li role="presentation">
+                                    <a class="text-light" href="about-us.html#professional" aria-controls="professional" role="tab" data-toggle="tab">Mission</a>
+                                </li>
+                                <li role="presentation" >
+                                    <a class="text-light" href="about-us.html#intelectual" aria-controls="intelectual" role="tab" data-toggle="tab">Philosophy & Objectives</a>
+                                </li>
+                            </ul>
+                            <!--Tab panes-->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active animated zoomIn" id="social">
+                                    <div class="tab-content-wrapper">
+                                        <p class="text-light">Africa University of Benin is poised to becoming the first Pan-African University, with campuses in all the countries of Africa with an excellent uniform standard that would bring the entire world to Africa.
+                                        </p>
+                                        <ul class="list-item text-light">
+                                            <li>Africa has the highest rates of educational exclusion in the world. Over one-fifth of children between the ages of 6 and 11 and one-third between the ages of 12 and 14 are out of school.</li>
+                                            <li>Almost 60 percent of children in sub-Saharan Africa between the ages of 15 and 17 are not in school.</li>
+                                            <li>Girls are much more likely to stay out of school than boys. Nine million girls between the ages of about 6 and 11 in Africa will never go to school at all, compared to six million boys.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane animated zoomIn" id="professional">
+                                    <div class="tab-content-wrapper">
+                                        <p class="text-light">
+                                            We have one singular mission of redefining education in Africa through unparalleled qualitative and innovative education that would produce all-round functional world-class graduates with globally relevant knowledge and skills needed in the 21st century.
+                                        </p>
+                                        <ul class="list-item">
+                                            <li>A UNESCO study in 2012 showed that the number of primary-aged children not attending school in Africa accounted for more than half of the global total.</li>
+                                            <li>Mom-connect, an SMS texting program based in South Africa, provides educational information regarding health care and health insurance coverage. The platform connects female health workers with other women who may have health questions or concerns about their families. Apps such as this one provide knowledge where gaps exist in the educational system.</li>
+                                            <li>In sub-Saharan Africa, only about one-quarter of pre-primary teachers are trained. Upper secondary school teachers have a slightly better ratio: about 50 percent have training.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane animated zoomIn" id="intelectual">
+                                    <div class="tab-content-wrapper">
+                                        <p class="text-light">
+                                            We are equally very much engrossed in entrepreneurship and apprenticeship education to expose the students to industrial rudimentary and operational skills requirements before graduation as well as aquainting them with labour market Dynamics
+                                        </p>
+                                        <ul class="list-item">
+                                            <li>Sub-Saharan Africa opposes Eastern Europe and Central Asia when it comes to gender disparity in education among urban areas. The latter tends to see a higher level of both educational attainment and literacy among females, while sub-Saharan Africa sees the opposite. In a study by UNESCO, men in Ghana had over two more years of education than women.</li>
+                                           <li> If every girl in sub-Saharan Africa completed even just a primary education, the maternal mortality rate would likely decrease by 70 percent.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end programs & services-->
+
+        <!--begin our history-->
+        <div class="our-history">
+            <div class="container">
+                <div class="title-page text-center">
+                    <h2 class="text-regular">Our Time Line</h2>
+                    <p class="text-light">At African UNiversity of Benin We are equally very much engrossed in entrepreneurship and apprenticeship education to expose the students to industrial rudimentary and operational skills requirements before graduation as well as aquainting them with labour market Dynamics</p>
+                </div>
+                <div class="history-content">
+                    <ul class="list-history text-center">
+                        <li>
+                            <span class="history-title text-light">University's <br> First Graduates</span>
+                            <span class="history-dot"> <span></span></span>
+                            <span class="history-year">2013</span>
+                        </li>
+                        <li>
+                            <span class="history-title">Recieved full<br>Accreditation</span>
+                            <span class="history-dot"> <span></span></span>
+                            <span class="history-year">2016</span>
+                        </li>
+                        <!-- <li>
+                            <span class="history-title">Bimonthly Magazine <br> Launched</span>
+                            <span class="history-dot"><span></span> </span>
+                            <span class="history-year">2016</span>
+                        </li>
+                        <li>
+                            <span class="history-title">Alumni Official Site <br> Launched</span>
+                            <span class="history-dot"><span></span> </span>
+                            <span class="history-year">2016</span>
+                        </li>
+                        <li>
+                            <span class="history-title">Alumni Dashboard <br> Launched</span>
+                            <span class="history-dot"> <span></span></span>
+                            <span class="history-year">2016</span>
+                        </li>
+                        <li>
+                            <span class="history-title">Worldwide Travel <br> Study Program</span>
+                            <span class="history-dot"> <span></span></span>
+                            <span class="history-year">2016</span>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--end our history-->
+        <div class="programs-services" id="prof">
+            <div class="container">
+                <div class="row">
+                    <div class="services-img col-md-6 col-sm-12 col-xs-12">
+                        <img class="img-responsive" src="{% static 'core/aub_files/prof.jpg' %}" alt="">
+                    </div>
+                    <div class="services-content col-md-6 col-sm-12 col-xs-12">
+                        <h2 class="heading-regular">Programs &amp; Services</h2>
+                        <div id="tab_services">
+                            <!--Nav tabs-->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a class="text-light" href="about-us.html#social" aria-controls="social" role="tab" data-toggle="tab">Prof V.ogar</a>
+                                </li>
+                            </ul>
+                            <!--Tab panes-->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active animated zoomIn" id="social">
+                                    <div class="tab-content-wrapper">
+                                        <p class="text-light"> 
+                                            As a University we are not isolated from the happening of the times. This University has to be part of the solution.
+                                            
+                                            This is achievable through problem-based learning and integrated curriculum. In this galloping global age, we must be clear about where we are heading our role in it and, our vision. The building blocks of globalisation remain the nation-state. Our university must function within this scope.
+                                            
+                                            African Univerity of Benin has grown in leaps and bounds since her inception in 2005. Our graduates must continue to embrace th world, perform upon its stage and make necessary impart for a better worlds
+                                            
+                                            As a university, we make this solemn commitment, to hold our students close to heart because we know they will be great; indeed they are great and they will make us proud
+                                            
+                                            To our dear parents, you do a great good to humanity when you “keep alive in your children a love of learning.” As an institution of learning worthy of its name, we will continue to provide the space within which to nurture, mature and build our children into becoming what they dream of becoming.
+                                            
+                                            The future is AUB… Bringing the world to africa!
+                                        </p>
+                                    </div>
+                                </div>
+                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end programs & services-->
+
+        <!--begin map-->
+        <div id="contacts" class="map">
+            <div class="container">
+                <div class="title-page text-center">
+                    <h2 class="text-regular">The Pan African Dream</h2>
+                    <p class="text-light">You too can be a part of it!</p>
+                </div>
+                <div class="map-content">
+                    <img class="img-responsive" src="{% static 'core/images/map-img.jpg' %}" style="background-color: darkblue; opacity: 0.5; alt="">
+                </div>
+            </div>
+        </div>
+        <!--end map-->
+
+        <!--begin newsletter-->
+        <div class="newsletter newsletter-parallax">
+            <div class="container">
+                <div class="newsletter-wrapper text-center">
+                    <div class="newsletter-title">
+                        <h2 class="heading-light">Keep Up and Join Our Newsletter</h2>
+                      
+                    </div>
+                    <form name="subscribe-form" target="_blank" class="form-inline">
+                        <input type="text" class="form-control text-center form-text-light" name="EMAIL" value="" placeholder="E-mail Address" >
+                        <button type="submit" class="button bnt-theme">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--end newsletter-->
+
+    </div>
+    <!--End content wrapper-->
+    <!--Begin footer wrapper-->
+  {% endblock content %}

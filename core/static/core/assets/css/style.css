@@ -1,0 +1,85 @@
+@import url(bootstrap.min.css);
+@import url(fonts.css);
+@import url(util.css);
+
+:root{
+    --primary-color: blue;
+    --primary-yellow: #fdce76;
+    --soft-gray: rgb(232, 232, 232);
+    --shadow: 2px 4px 20px rgba(0, 0, 0, 0.1);
+    /*--shadow: 2px 8px 40px rgba(0, 0, 0, 0.1);*/
+    --shadow2: 0px 0px 10px rgba(0, 0, 0, 0.24);
+}
+
+*{
+    font-family: "Open Sans";
+}
+
+header{
+    padding: 10px;
+    border-bottom: 1px solid var(--primary-yellow);
+}
+
+header .logo img{
+    width: 80px;
+    height: auto;
+}
+
+.timetable{
+    background: #fff;
+    margin-top: 50px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+}
+
+.title-section{
+    padding-bottom: 20px;
+}
+
+.main-timetable{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-course{
+    padding: 10px;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+
+.single-course .description h5{
+    font-weight: 700;
+}
+
+.free-period{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: auto;
+    height: 70px;
+    /*background: url(../img/footer_bg.png);*/
+    background: rgb(242, 242, 242);
+    border-radius: 10px;
+}
+
+tr td:first-child{
+    position: relative;
+    top: 20%;
+    margin-top: 50px;
+    color: red;
+}
+.table>thead>tr>th{
+    border-bottom: 1px solid #ddd
+}
+.table>tbody>tr>td{
+    padding-top: 50px;
+    border-top: none
+}
+
+/*		Sweet Alert		*/
+.swal-footer {
+  text-align: center !important;
+  margin-bottom: 20px !important; }

@@ -1,0 +1,186 @@
+
+{% extends 'core/base.html' %}
+{% block content %}
+    {% load static %}
+    <!--Begin content wrapper-->
+    {% block title %}
+    Aub News | African University of Benin
+    {% endblock title%}
+    <div class="content-wrapper">
+        <div class="latst-article">
+            <div class="container">
+                <div class="area-img">
+                    <img src="{% static 'core/images/img-article.jpg' %}" alt="">
+                </div>
+                <div class="area-content">
+                    <div class="category animated fadeIn">
+                        <!-- <a href="blog.html#" class="bnt text-regular">Community</a> -->
+                    </div>
+                    <div class="article-title">
+                        <h2 class="text-regular text-capitalize animated rollIn">Engaging With the AUB Community</h2>
+                    </div>
+                    <div class="stats">
+                        <span class="clock">
+                            <span class="icon clock-icon-while"></span>
+                            <span class="text-center text-white">16 May 2016</span>
+                        </span>
+                        <span class="comment">
+                            <span class="icon comment-icon-while"></span>
+                            <span class="text-center text-white">10 Comments</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% for item in news %}
+        <div class="blog-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-main col-lg-8 col-md-7 col-xs-12">
+                        <div class="articles">
+                            <div class="article-item">
+                                <div class="area-img">
+                                    {% if item.image %}
+                                    <img src="{{item.image.url}}" alt="">
+                                    {% else %}
+                                    {% endif %}
+                                </div>
+                                <div class="area-content">
+                                    <div class="article-left col-lg-2 col-md-3 col-sm-3 col-xs-12 pull-left">
+                                        <div class="catetory-title">
+                                            <h6 class="text-regular">News</h6>
+                                        </div>
+                                        <div class="stats">
+                                            <span class="icon user-icon"></span>
+                                            <span class="text-content text-light">Aub Admin</span>
+                                        </div>
+                                    </div>
+                                    <div class="article-right col-lg-10 col-md-9 col-sm-9 col-xs-12 pull-left">
+                                        <h3><a href="blog.html#">{{item.title}}</a></h3>
+                                        <p>{{item.article}}</p>
+                                        <div class="stats">
+                                            <span class="clock">
+                                                <span class="icon clock-icon"></span>
+                                                <span class="text-center text-light">{{item.date_posted}}</span>
+                                            </span>
+                                            <!-- <span class="comment">
+                                                <span class="icon comment-icon"></span>
+                                                <span class="text-center text-light">10 Comments</span>
+                                            </span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+
+                        <!-- for this im uning Ajax pagination instead of regular pagination -->
+
+
+
+                        <!-- <div class="pagination-wrapper text-center">
+                            <ul class="pagination">
+                                <li class="prev"><a href="blog.html#">Previous</a></li>
+                                <li><a href="blog.html#">1</a></li>
+                                <li><a href="blog.html#">2</a></li>
+                                <li class="current"><span>3</span></li>
+                                <li><a href="blog.html#">4</a></li>
+                                <li><a href="blog.html#">5</a></li>
+                                <li class="next"><a href="blog.html#">Next</a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="sidebar blog-right col-lg-4 col-md-5 hidden-sm hidden-xs">
+                        <div class="block-sidebar">
+                            <div class="block-item popurlar-port">
+                                <div class="block-title text-center">
+                                    <h5 class="text-regular text-uppercase">TOP 5 POSTS</h5>
+                                </div>
+                                {% for item in recent %}
+                                <div class="block-content">
+                                    <ul>
+                                        <li>
+                                            <div class="area-img">
+                                                <img src="{{item.image.url}}" alt="">
+                                            </div>
+                                            <div class="area-content">
+                                                <h6>{{item.title}}</h6>
+                                                <div class="stats">
+                                                    <span class="clock">
+                                                        <span class="icon clock-icon"></span>
+                                                        <span class="text-content text-light">{{item.date_posted}}</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                       
+                                        </li>
+                                    </ul>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <div class="block-item twitter">
+                                <div class="block-title text-center">
+                                    <h5 class="text-regular text-uppercase">TWITTER</h5>
+                                </div>
+                                <div class="block-content">
+                                    <div class="twitter-wrapper text-center">
+                                        <div class="twitter-icon color-theme">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="twitter-content">
+                                            <div class="twitter-desc">
+                                                <p class="text-light text-center">“In the midst of 3 wise prople you will be the 4th wise, in the midst of 3 rich people you will be the 4th richest, in the midst of 3 foolish people you can also be the 4th foolish person, use your head.  <a href="https://twitter.com/aubcotonou" class="color-theme">@#aaAubcotonou</a>“</p>
+                                                <div class="twitter-user">
+                                                    <span class="text-regular">@code_sultan</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="block-item tag">
+                                <div class="block-title text-center">
+                                    <h5 class="text-regular text-uppercase">POPULAR TAGS</h5>
+                                </div>
+                                <div class="block-content">
+                                    <ul class="list-inline">
+                                        <li><a href="blog.html#">sayidan</a></li>
+                                        <li><a href="blog.html#">community</a></li>
+                                        <li><a href="blog.html#">news</a></li>
+                                        <li><a href="blog.html#">alumni</a></li>
+                                        <li><a href="blog.html#">profile</a></li>
+                                        <li><a href="blog.html#">interview</a></li>
+                                        <li><a href="blog.html#">envato</a></li>
+                                        <li><a href="blog.html#">themeforest</a></li>
+                                        <li><a href="blog.html#">psd</a></li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--begin newsletter-->
+        <div class="newsletter newsletter-parallax type2">
+            <div class="container">
+                <div class="newsletter-wrapper text-center">
+                    <div class="newsletter-title">
+                        <h2 class="heading-light">Keep Up and Join Our Newsletter</h2>
+                        <p class="text-white">Duis autem vel eum iriure dolor in hendrerit in vulputate.</p>
+                    </div>
+                    <form name="subscribe-form" target="_blank" class="form-inline">
+                        <input type="text" class="form-control text-center form-text-light" name="EMAIL" value="" placeholder="E-mail Address" >
+                        <button type="submit" class="button bnt-theme">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--end newsletter-->
+
+    </div>
+    <!--End content wrapper-->
+    {% endblock content %}
